@@ -2,3 +2,147 @@
 
 /* カード内の画像は以下のURLを使用して下さい */
 /* https://picsum.photos/id/1005/200/300 */
+
+.green-square {
+  width: 200px;
+  height: 200px;
+  background: #76ff826b;
+  margin: 0 auto;
+}
+
+.blue-square {
+  width: 200px;
+  height: 200px;
+  background: #331aefd0;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+.fade-in {
+  animation: fade-in 4s ease 0s 1 normal;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fade-out 4s ease 4s 1 normal;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.spin {
+  animation: spin 4s linear infinite normal;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hover:hover {
+  background: #ff27e2c9;
+}
+
+.hover-spin:hover {
+  transform: rotate(360deg);
+}
+
+.hover-topslide:hover {
+  transform: translate(0, -20%);
+}
+
+.hover-rightslide:hover {
+  transform: translate(20%, 0);
+}
+
+.hover-height-change:hover {
+  height: 300px;
+}
+
+.hover-width-change:hover {
+  width: 500px;
+}
+
+.hover-border:hover {
+  border: 10px #00ffe5 solid;
+  box-sizing: border-box;
+}
+
+.hover-shadow:hover {
+  box-shadow: 8px 11px 10px 3px #06031ed0
+}
+
+.loading {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border: #ecf1f2 10px solid;
+  border-top: #14ff4bcd 10px solid;
+  border-radius: 50%;
+  animation: load 1.1s linear infinite normal;
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.flexbox {
+  display: flex;
+}
+
+.flexitem {
+  border: 1px solid #000000;
+  padding: 20px;
+  width: 300px;
+  background: #ffffff;
+  transition: 0.5s;
+  border-left: 0;
+}
+
+.flexitem:first-child{
+  border-left: 1px solid #000000;
+}
+
+.flexitem:hover{
+  box-shadow: 0px 0px 10px 3px #424242d0;
+  z-index: 1;
+}
+
+.flexitem p{
+  padding-top: 20px;
+}
+
+.photo {
+  background: url(https://picsum.photos/id/1005/200/300) center/cover no-repeat;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
